@@ -1,7 +1,7 @@
 ## BASIC FUNCTIONS
 
-* [Machine Epsilon](basic/maceps.md)
-* [Absolute Error](basic/abserr.md)
-* [Relative Error](basic/relerr.md)
-* [Logistic Equation](basic/logistic.md)
-* [Spring Mass Systems](basic/springmass.md)
+* [Machine Epsilon](maceps.md)
+* [Absolute Error](abserr.md)
+* [Relative Error](relerr.md)
+* [Logistic Equation](logistic.md)
+* [Spring Mass Systems](springmass.md)
