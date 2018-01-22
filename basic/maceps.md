@@ -21,9 +21,9 @@ Output from the lines above:
 Implementation/Code: The following is the code for maceps()
 
 double maceps() {
-   double num = 1.0;
-	while (num + 1.0 != 1.0) {
-		num /= 2;
-	}
-   return num;
+double num = 1.0;
+while (num + 1.0 != 1.0) {
+num /= 2;
+}
+return num;
 }
