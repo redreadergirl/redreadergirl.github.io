@@ -17,8 +17,17 @@
 
 **Usage/Example:**
 
-        logistic()
+        logistic(a, b, p0, t);
+        a = 1, b = 2, p0 = 3, t = 4
        
 Output from the lines above:
+
+        0.50775
   
 **Implementation/Code:** The following is the code for logistic()
+
+        double logistic(double a, double b, double p0, double t) {
+	            double exponent = exp(-1 * a * t);
+	            double p = a / ((((a / p0) - b) * exponent) + b);
+	            return p;
+        }
