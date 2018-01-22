@@ -1,7 +1,7 @@
 ## BASIC FUNCTIONS
 
-* [Machine Epsilon](https://redreadergirl.github.io/basic/maceps.md)
-* [Absolute Error](https://redreadergirl.github.io/basic/abserr.md)
-* [Relative Error](https://redreadergirl.github.io/basic/relerr.md)
-* [Logistic Equation](https://redreadergirl.github.io/basic/logistic.md)
-* [Spring Mass Systems](https://redreadergirl.github.io/basic/springmass.md)
+* [Machine Epsilon](basic/maceps.md)
+* [Absolute Error](basic/abserr.md)
+* [Relative Error](basic/relerr.md)
+* [Logistic Equation](basic/logistic.md)
+* [Spring Mass Systems](basic/springmass.md)
