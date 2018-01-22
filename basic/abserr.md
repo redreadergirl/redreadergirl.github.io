@@ -4,7 +4,7 @@
 
 **Language:** C++
 
-**Description/Purpose:** This function will compute the absolute value of an approximation.
+**Description/Purpose:** This function will compute the absolute error of an approximation.
 
 **Input:** 
 
