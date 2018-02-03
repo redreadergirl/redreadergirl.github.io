@@ -1,4 +1,4 @@
 ## APPENDIX
 
-* [LU Factorization](LUFactorization.md)
+* [LU Factorization](lufactorization.md)
 * [Matrix Class](matrix.md)
