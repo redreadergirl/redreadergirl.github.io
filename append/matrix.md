@@ -8,8 +8,8 @@
   
 **Implementation/Code:** 
 
-  class Matrix {
-  public:
+  	class Matrix {
+  	public:
 
 	  Matrix(int r, int c, int init) {
 		  vector<double> vec1(c, init);
@@ -17,7 +17,7 @@
 	  	vec = vec2;
 	  }
 
-  	Matrix(vector<vector<double>> vec) {
+  	  Matrix(vector<vector<double>> vec) {
 	  	this->vec = vec;
 	  }
 
@@ -57,7 +57,7 @@
 		  return this->vec[0].size();
 	  }
 
-  	void setVecUnit(int r, int c, double numb) {
+  	  void setVecUnit(int r, int c, double numb) {
 	  	this->vec[r][c] = numb;
 	  }
 
@@ -65,6 +65,6 @@
 		  return this->vec[r][c];
 	  }
 
-  private:
+  	private:
 	  vector<vector<double>> vec;
-  };
+  	};
