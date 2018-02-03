@@ -26,33 +26,33 @@ Output from the lines above:
 **Implementation/Code:** The following is the code for abserr()
 
       Matrix lufactorization(Matrix A, Matrix b) {
-	  int row = A.getRow();
-	  int col = A.getCol();
-	  Matrix E(row, col, 0);
-	  E.setVecUnit(0, 0, 1);
-	  Matrix Zero = E;
-	  Matrix L(row, col, 0);
-	  for (int i = 0; i < row; i++) {
-	      L.setVecUnit(i, i, 1);
-	  }
-	  for (int c = 0; c < col - 1; c++) {
-	      for (int r = 1; r < row; r++) {
-	           E.setVecUnit(r, c, -(A.getVecUnit(r, c) / A.getVecUnit(c, c)));
-		   E.setVecUnit(r, r, 1);
-	      }
-	      A = E * A;
-	      L = E * L;
-	      E = Zero;
-	  }
-	  Matrix C = L * b;
-	  Matrix x(b.getRow(), 1, 0);
-	  int r = x.getRow();
-	  for (int i = r - 1; i >= 0; i--) {
-	      double left = C.getVecUnit(i, 0);
-	      for (int j = i; j < r; j++) {
-	           left -= (A.getVecUnit(i, j) * x.getVecUnit(j, 0));
-	      }
-	      x.setVecUnit(i, 0, (left / A.getVecUnit(i, i)));
-	  }
-	  return x;
+	   int row = A.getRow();
+	   int col = A.getCol();
+	   Matrix E(row, col, 0);
+	   E.setVecUnit(0, 0, 1);
+	   Matrix Zero = E;
+	   Matrix L(row, col, 0);
+	   for (int i = 0; i < row; i++) {
+	       L.setVecUnit(i, i, 1);
+	   }
+	   for (int c = 0; c < col - 1; c++) {
+	       for (int r = 1; r < row; r++) {
+	            E.setVecUnit(r, c, -(A.getVecUnit(r, c) / A.getVecUnit(c, c)));
+		    E.setVecUnit(r, r, 1);
+	       }
+	       A = E * A;
+	       L = E * L;
+	       E = Zero;
+	   }
+	   Matrix C = L * b;
+	   Matrix x(b.getRow(), 1, 0);
+	   int r = x.getRow();
+	   for (int i = r - 1; i >= 0; i--) {
+	       double left = C.getVecUnit(i, 0);
+	       for (int j = i; j < r; j++) {
+	            left -= (A.getVecUnit(i, j) * x.getVecUnit(j, 0));
+	       }
+	       x.setVecUnit(i, 0, (left / A.getVecUnit(i, i)));
+	   }
+	   return x;
       }
