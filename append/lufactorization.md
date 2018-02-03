@@ -23,7 +23,7 @@ Output from the lines above:
 
         x = { {4.75}, {-.75}, {1.75} }
   
-**Implementation/Code:** The following is the code for abserr()
+**Implementation/Code:** The following is the code for lufactorization()
 
       Matrix lufactorization(Matrix A, Matrix b) {
 	   int row = A.getRow();
