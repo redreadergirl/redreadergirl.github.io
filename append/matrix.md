@@ -24,6 +24,15 @@
 	  Matrix(const Matrix &m) {
 	  	this->vec = m.vec;
 	  }
+	  
+	  Matrix(int n) {
+		vector<double> vec1(n, 0);
+		vector<vector<double>> vec2(n, vec1);
+		for (int i = 0; i < n; i++) {
+			vec2[i][i] = 1;
+		}
+		vec = vec2;
+	  }
 	
 	  Matrix operator+(const Matrix &b) {
 		  Matrix matrix(*this);
@@ -39,7 +48,7 @@
 		  Matrix matrix(this->vec.size(), b.vec[0].size(), 0);
 		  for (int i = 0; i < this->vec.size(); i++) {
 			  for (int j = 0; j < b.vec[0].size(); j++) {
-				  int total = 0;
+				  double total = 0;
 				  for (int k = 0; k < b.vec.size(); k++) {
 					  total += (this->vec[i][k] * b.vec[k][j]);
 			  	}
@@ -63,6 +72,18 @@
 
 	  double getVecUnit(int r, int c) {
 		  return this->vec[r][c];
+	  }
+	  
+	  Matrix swapRow(int row1, int row2) {
+		Matrix E(this->getCol());
+		for (int i = 0; i < this->getCol(); i++) {
+			swap(this->vec[row1][i], this->vec[row2][i]);
+		}
+		E.vec[row1][row1] = 0;
+		E.vec[row2][row2] = 0;
+		E.vec[row1][row2] = 1;
+		E.vec[row2][row1] = 1;
+		return E;
 	  }
 
   	private:
