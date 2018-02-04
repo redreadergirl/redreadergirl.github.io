@@ -1,33 +1,34 @@
-## ABSOLUTE ERROR
+## INFINITY NORM OF DIFFERENCE IN VECTORS
 
 **Author:** Claire Romney
 
 **Language:** C++
 
-**Description/Purpose:** This function will compute the absolute error of an approximation.
+**Description/Purpose:** This function will compute the infinity norm of the difference between 2 vectors
 
 **Input:** 
         
-        x = approximation
-        xbar = exact solution
+        vector<double> A = first vector
+	vector<double> B = second vector
 
-**Output:** The function will output a double of the absolute error
+**Output:** The function will output the norm of A - B
 
 **Usage/Example:**
 
-        abserr(double x, double xbar)
-        x = 1, xbar = 1.00001
+        difinorm(vector<double> A, vector<double> B)
+	A = {6, 5, 4}
+	B = {5, 3, 1}
        
 Output from the lines above:
 
-        1e-05
+        3
   
-**Implementation/Code:** The following is the code for abserr()
+**Implementation/Code:** The following is the code for difinorm()
 
-        double abserr(double x, double xbar) {
-	        double error = x - xbar;
-	        if (error < 0) {
-		        error *= -1;
-	        }
-	        return error;
-        }
+	double difinorm(vector<double> A, vector<double> B) {
+		vector<double> E;
+		for (int i = 0; i < A.size(); i++) {
+			E.push_back(A[i] - B[i]);
+		}
+		return inorm(E);
+	}
