@@ -1,33 +1,32 @@
-## ABSOLUTE ERROR
+## 1 NORM
 
-**Author:** Claire Romney
+Author: Claire Romney
 
-**Language:** C++
+Language: C++
 
-**Description/Purpose:** This function will compute the absolute error of an approximation.
+Description/Purpose: This function will compute the 1 norm of a vector
 
-**Input:** 
-        
-        x = approximation
-        xbar = exact solution
+Input:
 
-**Output:** The function will output a double of the absolute error
+	vector<double> A = vector
+	
+Output: The function will output the 1 norm of vector A.
 
-**Usage/Example:**
+Usage/Example:
 
-        abserr(double x, double xbar)
-        x = 1, xbar = 1.00001
-       
+	onorm(vector<double> A)
+	A = {1, 2, 3}
+
 Output from the lines above:
 
-        1e-05
-  
-**Implementation/Code:** The following is the code for abserr()
+	6
+    
+Implementation/Code: The following is the code for onorm()
 
-        double abserr(double x, double xbar) {
-	        double error = x - xbar;
-	        if (error < 0) {
-		        error *= -1;
-	        }
-	        return error;
-        }
+	double onorm(vector<double> E) {
+		double norm = 0;
+		for (int i = 0; i < E.size(); i++) {
+			norm += abs(E[i]);
+		}
+		return norm;
+	}
