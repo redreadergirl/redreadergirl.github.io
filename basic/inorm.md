@@ -1,18 +1,18 @@
 ## INFINITY NORM
 
-Author: Claire Romney
+**Author:** Claire Romney
 
-Language: C++
+**Language:** C++
 
-Description/Purpose: This function will compute the infinity norm of a vector
+**Description/Purpose:** This function will compute the infinity norm of a vector
 
-Input:
+**Input:**
 
 	vector<double> A = vector
 	
-Output: The function will output the infinity norm of vector A.
+**Output:** The function will output the infinity norm of vector A.
 
-Usage/Example:
+**Usage/Example:**
 
 	inorm(vector<double> A)
 	A = {1, 2, 3}
@@ -21,7 +21,7 @@ Output from the lines above:
 
 	3
     
-Implementation/Code: The following is the code for inorm()
+**Implementation/Code:** The following is the code for inorm()
 
 	double inorm(vector<double> E) {
 		double norm = 0;
