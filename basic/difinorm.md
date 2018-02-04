@@ -11,7 +11,7 @@
 	vector<double> A = first vector
 	vector<double> B = second vector
 
-**Output:** The function will output the norm of A - B
+**Output:** The function will output the infinity norm of A - B
 
 **Usage/Example:**
 
