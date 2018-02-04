@@ -1,18 +1,18 @@
 ## 1 NORM
 
-Author: Claire Romney
+**Author:** Claire Romney
 
-Language: C++
+**Language:** C++
 
-Description/Purpose: This function will compute the 1 norm of a vector
+**Description/Purpose:** This function will compute the 1 norm of a vector
 
-Input:
+**Input:**
 
 	vector<double> A = vector
 	
-Output: The function will output the 1 norm of vector A.
+**Output:** The function will output the 1 norm of vector A.
 
-Usage/Example:
+**Usage/Example:**
 
 	onorm(vector<double> A)
 	A = {1, 2, 3}
@@ -21,7 +21,7 @@ Output from the lines above:
 
 	6
     
-Implementation/Code: The following is the code for onorm()
+**Implementation/Code:** The following is the code for onorm()
 
 	double onorm(vector<double> E) {
 		double norm = 0;
