@@ -8,14 +8,14 @@
 
 **Input:** 
         
-        vector<double> A = first vector
+	vector<double> A = first vector
 	vector<double> B = second vector
 
 **Output:** The function will output the norm of A - B
 
 **Usage/Example:**
 
-        difinorm(vector<double> A, vector<double> B)
+	difinorm(vector<double> A, vector<double> B)
 	A = {6, 5, 4}
 	B = {5, 3, 1}
        
