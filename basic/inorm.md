@@ -1,32 +1,34 @@
-## 1 NORM
+## INFINITY NORM
 
 Author: Claire Romney
 
 Language: C++
 
-Description/Purpose: This function will compute the 1 norm of a vector
+Description/Purpose: This function will compute the infinity norm of a vector
 
 Input:
 
 	vector<double> A = vector
 	
-Output: The function will output the 1 norm of vector A.
+Output: The function will output the infinity norm of vector A.
 
 Usage/Example:
 
-	onorm(vector<double> A)
+	inorm(vector<double> A)
 	A = {1, 2, 3}
 
 Output from the lines above:
 
-	6
+	3
     
-Implementation/Code: The following is the code for onorm()
+Implementation/Code: The following is the code for inorm()
 
-	double onorm(vector<double> E) {
+	double inorm(vector<double> E) {
 		double norm = 0;
 		for (int i = 0; i < E.size(); i++) {
-			norm += abs(E[i]);
+			if (abs(E[i]) > norm) {
+				norm = abs(E[i]);
+			}
 		}
 		return norm;
 	}
