@@ -1,33 +1,34 @@
-## ABSOLUTE ERROR
+## 1 NORM OF DIFFERENCE IN VECTORS
 
 **Author:** Claire Romney
 
 **Language:** C++
 
-**Description/Purpose:** This function will compute the absolute error of an approximation.
+**Description/Purpose:** This function will compute the 1 norm of the difference between 2 vectors
 
 **Input:** 
         
-        x = approximation
-        xbar = exact solution
+	vector<double> A = first vector
+	vector<double> B = second vector
 
-**Output:** The function will output a double of the absolute error
+**Output:** The function will output the 1 norm of A - B
 
 **Usage/Example:**
 
-        abserr(double x, double xbar)
-        x = 1, xbar = 1.00001
+	difonorm(vector<double> A, vector<double> B)
+	A = {6, 5, 4}
+	B = {5, 3, 1}
        
 Output from the lines above:
 
-        1e-05
+	6
   
-**Implementation/Code:** The following is the code for abserr()
+**Implementation/Code:** The following is the code for difonorm()
 
-        double abserr(double x, double xbar) {
-	        double error = x - xbar;
-	        if (error < 0) {
-		        error *= -1;
-	        }
-	        return error;
-        }
+	double difonorm(vector<double> A, vector<double> B) {
+		vector<double> E;
+		for (int i = 0; i < A.size(); i++) {
+			E.push_back(A[i] - B[i]);
+		}
+		return onorm(E);
+	}
