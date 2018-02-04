@@ -1,33 +1,32 @@
-## ABSOLUTE ERROR
+## 2 NORM
 
 **Author:** Claire Romney
 
 **Language:** C++
 
-**Description/Purpose:** This function will compute the absolute error of an approximation.
+**Description/Purpose:** This function will compute the 2 norm of a vector
 
-**Input:** 
-        
-        x = approximation
-        xbar = exact solution
+**Input:**
 
-**Output:** The function will output a double of the absolute error
+	vector<double> A = vector
+	
+**Output:** The function will output the 2 norm of vector A.
 
 **Usage/Example:**
 
-        abserr(double x, double xbar)
-        x = 1, xbar = 1.00001
-       
-Output from the lines above:
+	tnorm(vector<double> A)
+	A = {1, 2, 3}
 
-        1e-05
-  
-**Implementation/Code:** The following is the code for abserr()
+**Output from the lines above:**
 
-        double abserr(double x, double xbar) {
-	        double error = x - xbar;
-	        if (error < 0) {
-		        error *= -1;
-	        }
-	        return error;
-        }
+	3.742
+    
+**Implementation/Code:** The following is the code for tnorm()
+
+	double tnorm(vector<double> E) {
+		double norm = 0;
+		for (int i = 0; i < E.size(); i++) {
+			norm += pow(E[i], 2);
+		}
+		return sqrt(norm);
+	}
