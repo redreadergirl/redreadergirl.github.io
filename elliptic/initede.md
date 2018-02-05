@@ -8,27 +8,27 @@
 
 **Input:**
 
-  int n = size of mesh
-  string f = f(x) *user will provide a function, fillF(), which will compute f(x) for all values in mesh
-  double a = lower bound
-  double b = upper bound
-  double ua = u evaluated at a
-  double ub = u evaluated at b
+	int n = size of mesh
+	string f = f(x) *user will provide a function, fillF(), which will compute f(x) for all values in mesh
+	double a = lower bound
+	double b = upper bound
+	double ua = u evaluated at a
+	double ub = u evaluated at b
 	
 **Output:** The function will create a tridiagonal coefficient system.
 
-  Matrix T = Tridiagonal Coefficient Matrix
-  vector<double> rhs = Right Hand Side (b, in Ax = b)
+	Matrix T = Tridiagonal Coefficient Matrix
+	vector<double> rhs = Right Hand Side (b, in Ax = b)
 
 **Usage/Example:**
 
-  initede(int n)
-  n = 4;
-  f = x;
-  a = 1;
-  b = 2;
-  ua = 1;
-  ub = 2;
+	initede(int n)
+	n = 4;
+	f = x;
+	a = 1;
+	b = 2;
+	ua = 1;
+	ub = 2;
 
 Output from the lines above:
 
@@ -36,7 +36,7 @@ Output from the lines above:
     
 **Implementation/Code:** The following is the code for initede()
 
-  void initEDE(int n) {
+	void initEDE(int n) {
 	  string f;
 	  double a, b, ua, ub;
 	  Matrix temp(n - 1, n - 1, 0);
@@ -68,4 +68,4 @@ Output from the lines above:
 
 	  rhs[0] -= ua;
 	  rhs[n - 2] -= ub;
-  }
+	}
