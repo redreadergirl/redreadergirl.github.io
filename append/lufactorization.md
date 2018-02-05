@@ -63,3 +63,6 @@ Output from the lines above:
 		}
 		return x;
 	}
+
+**Link for rowSwapper():**
+	[rowSwapper()](rowSwapper.md)
