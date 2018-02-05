@@ -60,7 +60,7 @@ Output from the lines above:
 	  }
 	  double h = (b - a) / n;
 	  vector<double> x;
-	  for (int i = 0; i < n - 1; i++) {
+	  for (int i = 0; i < n + 1; i++) {
 		  x.push_back(a + (i * h));
 	  }
 
