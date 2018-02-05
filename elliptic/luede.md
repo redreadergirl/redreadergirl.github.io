@@ -39,4 +39,4 @@ Output from the lines above:
   }
   
 **Link to lufactorization:**
-  [lufactorization()](append/lufactorization.md)
+  [lufactorization()](../append/lufactorization.md)
