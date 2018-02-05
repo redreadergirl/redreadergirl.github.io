@@ -10,7 +10,7 @@
 
   int n = size of mesh
   
-  Input related to the ODE will be initiated using initede()
+  Input related to the ODE will be initiated using [initede()](initede.md)
 	
 	
 **Output:** The function will output a vector<double> of U at every mesh point
