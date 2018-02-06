@@ -16,12 +16,12 @@
 **Usage/Example:**
 
 	luede(int n);
-  n = 4;
-  f = x;
-  a = 1;
-  b = 2;
-  ua = 1;
-  ub = 2;
+  	n = 4;
+  	f = x;
+  	a = 1;
+  	b = 2;
+  	ua = 1;
+  	ub = 2;
 
 Output from the lines above:
 
@@ -29,14 +29,14 @@ Output from the lines above:
     
 **Implementation/Code:** The following is the code for luede()
 
-  Matrix luede(int n) {
+	Matrix luede(int n) {
 	  initEDE(n);
 	  Matrix x(n - 1, 1, 0);
 	  for (int i = 0; i < n - 1; i++) {
 		  x.setVecUnit(i, 0, rhs[i]);
 	  }
 	  return lufactorization(T, x);
-  }
+ 	}
   
 **Link to lufactorization:**
   [lufactorization()](../append/lufactorization.md)
