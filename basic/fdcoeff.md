@@ -8,9 +8,9 @@
 
 **Input:**
 
-  int k = Derivative you are approximating
-  double xbar = The exact solution
-  vector<double> x = the stencil points you are approximating at.
+	int k = Derivative you are approximating
+  	double xbar = The exact solution
+  	vector<double> x = the stencil points you are approximating at.
 	
 **Output:** The function will output the coefficients for the approximations.
 
