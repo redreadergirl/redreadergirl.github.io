@@ -9,7 +9,6 @@
 **Input:**
 
 	int n = size of mesh
-  	[initiate with initede()](initede.md)
 	
 **Output:** The function will output the solution to the ODE at each mesh point.
 
