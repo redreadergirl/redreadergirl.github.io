@@ -16,10 +16,10 @@
 
 **Usage/Example:**
 
-  fdcoeff(int k, double xbar, vector<double> x)
-  k = 2
-  xbar = 3
-  x = {2, 2.5, 3, 3.5, 4}
+	fdcoeff(int k, double xbar, vector<double> x)
+	k = 2
+	xbar = 3
+	x = {2, 2.5, 3, 3.5, 4}
 
 Output from the lines above:
 
@@ -27,7 +27,7 @@ Output from the lines above:
     
 **Implementation/Code:** The following is the code for fdcoeff()
 
-  Matrix fdcoeff(int k, double xbar, vector<double> x) {
+	Matrix fdcoeff(int k, double xbar, vector<double> x) {
 	  int n = x.size();
 	  Matrix A(n, n, 1);
 
@@ -49,7 +49,7 @@ Output from the lines above:
 
 	  Matrix c = lufactorization(A, b);
 	  return c;
-  }
+	}
 
 **Link to Matrix Class:** 
   [Matrix](../append/matrix.md)
