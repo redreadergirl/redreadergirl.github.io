@@ -27,7 +27,7 @@
 
 Output from the lines above:
 
-	{.0798611, -0.762153, -1.66406}
+	{1.20486, 1.48785, 1.71094}
     
 **Implementation/Code:** The following is the code for thomas()
 
