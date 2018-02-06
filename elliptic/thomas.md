@@ -8,9 +8,8 @@
 
 **Input:**
 
-  int n = size of mesh
-  
-  Input related to the ODE will be initiated using [initede()](initede.md)
+	int n = size of mesh
+	Input related to the ODE will be initiated using [initede()](initede.md)
 	
 	
 **Output:** The function will output a vector<double> of U at every mesh point
@@ -18,12 +17,12 @@
 **Usage/Example:**
 
 	thomas(int n)
-  n = 4;
-  f = x;
-  a = 1;
-  b = 2;
-  ua = 1;
-  ub = 2;
+	n = 4;
+	f = x;
+	a = 1;
+	b = 2;
+	ua = 1;
+	ub = 2;
 
 Output from the lines above:
 
