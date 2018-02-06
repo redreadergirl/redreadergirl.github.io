@@ -36,9 +36,13 @@ Output from the lines above:
     
 **Implementation/Code:** The following is the code for initede()
 
+	Matrix T(1, 1, 0);
+	vector<double> rhs;
+	double ua, ub, h;
+
 	void initEDE(int n) {
 	  string f;
-	  double a, b, ua, ub;
+	  double a, b;
 	  Matrix temp(n - 1, n - 1, 0);
 	  T = temp;
 	
@@ -59,7 +63,7 @@ Output from the lines above:
 		  T.setVecUnit(i + 1, i, 1);
 	  }
 	  T.setVecUnit(n - 2, n - 2, -2);
-	  double h = (b - a) / n;
+	  h = (b - a) / n;
 	  vector<double> x;
 	  for (int i = 0; i < n + 1; i++) {
 		  x.push_back(a + (i * h));
