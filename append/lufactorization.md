@@ -48,6 +48,7 @@ Output from the lines above:
 				L = E * L;
 				E = Zero;
 				E.setVecUnit(i + 1, i + 1, 1);
+				Zero = E;
 			}
 		}
 
