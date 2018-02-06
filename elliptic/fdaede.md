@@ -15,21 +15,21 @@
 **Usage/Example:**
 
 	fdaede(int n)
-  n = 4;
-  f = x;
-  a = 1;
-  b = 2;
-  ua = 1;
-  ub = 2;
+	n = 4;
+	f = x;
+	a = 1;
+	b = 2;
+	ua = 1;
+	ub = 2;
 
 Output from the lines above:
 
 	k(x) generated: {10, 27, 30}
-  {0.0626198, 0.0330521, 0.0463838}
+	{0.0626198, 0.0330521, 0.0463838}
     
 **Implementation/Code:** The following is the code for fdaede()
 
-  Matrix fdaede(int n) {
+	Matrix fdaede(int n) {
 	  initEDE(n);
 
 	  Matrix K(n - 1, 1, 0);
@@ -50,4 +50,4 @@ Output from the lines above:
 	  Matrix ans = lufactorization(T, b);
 
 	  return ans;
-  }
+	}
