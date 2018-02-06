@@ -9,19 +9,18 @@
 **Input:**
 
 	int n = size of mesh
-  All other input is initiated in [initede()](initede.md)
 	
 **Output:** The function will output the solution to the function at each point int the mesh
 
 **Usage/Example:**
 
 	jacobi(int n)
-  n = 4;
-  f = "x";
-  a = 1;
-  b = 2;
-  ua = 1;
-  ub = 2;
+	n = 4;
+	f = "x";
+	a = 1;
+	b = 2;
+	ua = 1;
+	ub = 2;
 
 Output from the lines above:
 
@@ -29,7 +28,7 @@ Output from the lines above:
     
 **Implementation/Code:** The following is the code for jacobi()
 
-  Matrix jacobi(int n) {
+	Matrix jacobi(int n) {
 	  initEDE(n);
 
 	  Matrix D(n - 1, n - 1, 0);
@@ -51,4 +50,4 @@ Output from the lines above:
 	  }
 
 	  return x;
-  }
+	}
