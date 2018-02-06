@@ -3,7 +3,7 @@
 # Table Of Contents
 
 * [Basic Functions](basic/basicfunctions.md)
-* [Elliptic Problems](ellip/elliptic.md)
+* [Elliptic Problems](elliptic/elliptic.md)
 * [Parabolic Problems](parab/parabolic.md)
 * [Hyperbolic Problems](hyper/hyperbolic.md)
 * [Test Problems](test/testproblems.md)
