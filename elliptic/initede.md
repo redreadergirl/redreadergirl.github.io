@@ -58,6 +58,7 @@ Output from the lines above:
 		  T.setVecUnit(i, i + 1, 1);
 		  T.setVecUnit(i + 1, i, 1);
 	  }
+	  T.setVecUnit(n - 2, n - 2, -2);
 	  double h = (b - a) / n;
 	  vector<double> x;
 	  for (int i = 0; i < n + 1; i++) {
