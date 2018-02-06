@@ -25,7 +25,7 @@
 
 Output from the lines above:
 
-	{ -0.484375, -1.89063, -3.20313}
+	{ 1.11719, 1.3125, 1.60156 }
     
 **Implementation/Code:** The following is the code for luede()
 
