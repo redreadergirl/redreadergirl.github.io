@@ -9,19 +9,19 @@
 **Input:**
 
 	int n = size of mesh
-  [initiate with initede()](initede.md)
+  	[initiate with initede()](initede.md)
 	
 **Output:** The function will output the solution to the ODE at each mesh point.
 
 **Usage/Example:**
 
 	luede(int n);
-  	n = 4;
-  	f = x;
-  	a = 1;
-  	b = 2;
-  	ua = 1;
-  	ub = 2;
+	n = 4;
+	f = x;
+	a = 1;
+	b = 2;
+	ua = 1;
+	ub = 2;
 
 Output from the lines above:
 
@@ -36,7 +36,7 @@ Output from the lines above:
 		  x.setVecUnit(i, 0, rhs[i]);
 	  }
 	  return lufactorization(T, x);
- 	}
+	}
   
 **Link to lufactorization:**
   [lufactorization()](../append/lufactorization.md)
