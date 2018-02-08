@@ -37,14 +37,13 @@ Output from the lines above:
 		for (int i = 0; i < n - 1; i++) {
 			int random = (rand() % (50 - 10 + 1)) + 10;
 			K.setVecUnit(i, 0, random);
-
-			cout << random << " ";
-
 			b.setVecUnit(i, 0, rhs[i]);
 		}
 
 		for (int i = 0; i < n - 2; i++) {
-			rhs[i] /= K.getVecUnit(i, 0);
+			T.setVecUnit(i, i, T.getVecUnit(i, i) * K.getVecUnit(i, 0));
+			T.setVecUnit(i, i+1, T.getVecUnit(i, i+1) * K.getVecUnit(i, 0));
+			T.setVecUnit(i+1, i, T.getVecUnit(i+1, i) * K.getVecUnit(i, 0));
 		}
 		T.setVecUnit(n - 2, n - 2, T.getVecUnit(n - 2, n - 2) * K.getVecUnit(n - 2, 0));
 
