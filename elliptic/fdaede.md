@@ -30,24 +30,25 @@ Output from the lines above:
 **Implementation/Code:** The following is the code for fdaede()
 
 	Matrix fdaede(int n) {
-	  initEDE(n);
+		initEDE(n);
 
-	  Matrix K(n - 1, 1, 0);
-	  Matrix b(n - 1, 1, 0);
-	  for (int i = 0; i < n - 1; i++) {
-		  int random = (rand() % (50 - 10 + 1)) + 10;
-		  K.setVecUnit(i, 0, random);
-		  b.setVecUnit(i, 0, rhs[i]);
-	  }
+		Matrix K(n - 1, 1, 0);
+		Matrix b(n - 1, 1, 0);
+		for (int i = 0; i < n - 1; i++) {
+			int random = (rand() % (50 - 10 + 1)) + 10;
+			K.setVecUnit(i, 0, random);
 
-	  for (int i = 0; i < n - 2; i++) {
-		  T.setVecUnit(i, i, T.getVecUnit(i, i) * K.getVecUnit(i, 0));
-		  T.setVecUnit(i, i+1, T.getVecUnit(i, i+1) * K.getVecUnit(i, 0));
-		  T.setVecUnit(i+1, i, T.getVecUnit(i+1, i) * K.getVecUnit(i, 0));
-	  }
-	  T.setVecUnit(n - 2, n - 2, T.getVecUnit(n - 2, n - 2) * K.getVecUnit(n - 2, 0));
+			cout << random << " ";
 
-	  Matrix ans = lufactorization(T, b);
+			b.setVecUnit(i, 0, rhs[i]);
+		}
 
-	  return ans;
+		for (int i = 0; i < n - 2; i++) {
+			rhs[i] /= K.getVecUnit(i, 0);
+		}
+		T.setVecUnit(n - 2, n - 2, T.getVecUnit(n - 2, n - 2) * K.getVecUnit(n - 2, 0));
+
+		Matrix ans = lufactorization(T, b);
+
+		return ans;
 	}
