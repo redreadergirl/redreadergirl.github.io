@@ -45,4 +45,4 @@ Output from the lines above:
   	}
   
 Matrix class:
- [Matrix](matrix.md)
+ [Matrix](../append/matrix.md)
