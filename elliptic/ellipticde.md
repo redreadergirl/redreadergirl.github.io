@@ -6,6 +6,6 @@
 * [Inverse Power Method](inversemethod.md)
 * [Jacobi Iteration](jacobi.md)
 * [LU Factorization](luede.md)
-* [Nine-Point Stencil](ninepoin.md)
+* [Nine-Point Stencil](ninepoint.md)
 * [Power Method Iteration](powermethod.md)
 * [Thomas Algorithm](thomas.md)
