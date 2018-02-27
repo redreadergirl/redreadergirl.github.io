@@ -46,4 +46,4 @@ Output from the lines above:
 	    return 1 / lambdaMin;
   }
   
-Matrix Class: [Matrix](matrix.md)
+Matrix Class: [Matrix](../append/matrix.md)
