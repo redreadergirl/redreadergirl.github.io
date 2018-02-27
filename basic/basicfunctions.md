@@ -6,6 +6,8 @@
 * [Infinity Norm of Difference in Vectors](difinorm.md)
 * [Logistic Equation](logistic.md)
 * [Machine Epsilon](maceps.md)
+* [Matrix Infinity Norm](matrixinfnorm.md)
+* [Matrix One Norm](matrixonenorm.md)
 * [Relative Error](relerr.md)
 * [Spring Mass Systems](springmass.md)
 * [1 Norm](onorm.md)
