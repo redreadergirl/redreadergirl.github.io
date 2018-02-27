@@ -9,9 +9,10 @@
 **Input:**
 
 	int n: number of divisions in the mesh in both x and y
-  string y: f(x) - User will provide code if they don't want f(x)=sin(xy)
+  	string y: f(x) - User will provide code if they don't want f(x)=sin(xy)
 	
 **Output:** The function will output a vector of doubles with the solutions in the following order:
+
 	{U11, U21, U31, U12, U22, U32, U13, U23, U33}
 
 **Usage/Example:**
