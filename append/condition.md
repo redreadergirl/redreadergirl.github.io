@@ -36,5 +36,5 @@ Output from the lines above:
     	return (abs(max) / abs(min));
     }
 
-* Inverse Power Method: [inverseIteration()](inversemethod.md)
-* Power Method: [powerIteration()](powermethod.md)
+* Inverse Power Method: [inverseIteration()](../elliptic/inversemethod.md)
+* Power Method: [powerIteration()](../elliptic/powermethod.md)
