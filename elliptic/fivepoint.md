@@ -27,15 +27,15 @@ Output from the lines above:
 	
 **Implementation/Code:** The following is the code for fivePointStencil()
 
-    vector<double> inity(string y, int n, double h) {
-	vector<double> answer(n * n, 0);
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n; j++) {
-				answer[i * n + j] += sin(((i + 1) * (j+1)) / (h * h));
+	vector<double> inity(string y, int n, double h) {
+		vector<double> answer(n * n, 0);
+			for (int i = 0; i < n; i++) {
+				for (int j = 0; j < n; j++) {
+					answer[i * n + j] += sin(((i + 1) * (j+1)) / (h * h));
+				}
 			}
-		}
-		return answer;
-    }
+			return answer;
+    	}
 
     vector<double> fivePointStencil(double n, string y) {
 	    double h = 1 / (n + 1);
