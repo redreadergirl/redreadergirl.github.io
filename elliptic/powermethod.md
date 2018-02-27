@@ -24,7 +24,7 @@ Output from the lines above:
 **Implementation/Code:** The following is the code for powerIteration()
 
 	  double powerIteration(Matrix A) {
-		  Matrix v(A.getCol(), 1, 1);
+		Matrix v(A.getCol(), 1, 1);
 	  	double tol = .001;
 	  	int maxiter = 50;
 	  	double error = 10 * tol;
@@ -44,5 +44,5 @@ Output from the lines above:
 		  return lambdaMax;
   	}
   
- Matrix class:
-  [Matrix]{matrix.md}
+Matrix class:
+* [Matrix]{matrix.md}
