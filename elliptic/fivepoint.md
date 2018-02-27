@@ -9,9 +9,10 @@
 **Input:**
 
 	int n: number of divisions in the mesh in both x and y
-  string y: f(x) - User will provide code if they don't want f(x)=sin(xy)
+  	string y: f(x) - User will provide code if they don't want f(x)=sin(xy)
 	
 **Output:** The function will output a vector of doubles with the solutions in the following order:
+    
     {U11, U21, U31, U12, U22, U32, U13, U23, U33}
 
 **Usage/Example:**
@@ -25,6 +26,16 @@ Output from the lines above:
   	{-0.077, -0.299, 0.015, -0.299, -0.584, -0.4085, 0.015, -0.4085, -0.815}
 	
 **Implementation/Code:** The following is the code for fivePointStencil()
+
+    vector<double> inity(string y, int n, double h) {
+	vector<double> answer(n * n, 0);
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				answer[i * n + j] += sin(((i + 1) * (j+1)) / (h * h));
+			}
+		}
+		return answer;
+    }
 
     vector<double> fivePointStencil(double n, string y) {
 	    double h = 1 / (n + 1);
