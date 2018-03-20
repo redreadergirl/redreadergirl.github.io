@@ -8,7 +8,7 @@
 
 **Input:**
 
-	  Matrix A = matrix composed of constants of linear system of equations
+	Matrix A = matrix composed of constants of linear system of equations
   	Matrix f = column matrix composed of the answers of the linear system of equations
 	
 **Output:** The function will output the solution to the linear system of equations as a Matrix.
