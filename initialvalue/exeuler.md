@@ -8,9 +8,9 @@
 
 **Input:**
 
-  double y0 = initial y value;
-  double t0 = initial t value;
-  double time = time you want to solve for;
+  	double y0 = initial y value;
+  	double t0 = initial t value;
+  	double time = time you want to solve for;
   
   The user will provide a function to solve f(t, y);
   
@@ -19,10 +19,10 @@
 **Usage/Example:**
 
 	explicitEulers(double y0, double t0, double time)
-  y0 = 1;
-  t0 = 0;
-  time = 4;
-  f(t, y) = y;
+  	y0 = 1;
+  	t0 = 0;
+  	time = 4;
+  	f(t, y) = y;
 
 Output from the lines above:
 
@@ -30,7 +30,7 @@ Output from the lines above:
     
 **Implementation/Code:** The following is the code for jacobi()
 
-  double explicitEulers(double y0, double t0, double time) {
+  	double explicitEulers(double y0, double t0, double time) {
 	  double k = .0125;
 	  double y = y0;
 	  double t = t0;
@@ -40,4 +40,4 @@ Output from the lines above:
 	  	t += k;
 	  }
 	  return y;
-  }
+  	}
