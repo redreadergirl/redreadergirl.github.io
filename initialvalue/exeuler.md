@@ -28,7 +28,7 @@ Output from the lines above:
 
 	53.2611
     
-**Implementation/Code:** The following is the code for jacobi()
+**Implementation/Code:** The following is the code for explicitEulers()
 
   	double explicitEulers(double y0, double t0, double time) {
 	  double k = .0125;
