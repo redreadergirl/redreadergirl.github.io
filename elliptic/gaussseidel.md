@@ -9,15 +9,15 @@
 **Input:**
 
 	Matrix A = matrix composed of constants of linear system of equations
-  Matrix b = column matrix composed of the answers of the linear system of equations
+  	Matrix b = column matrix composed of the answers of the linear system of equations
 	
 **Output:** The function will output the solution to the linear system of equations as a Matrix.
 
 **Usage/Example:**
 
-  gaussSeidel(Matrix A, Matrix b)
-  Matrix A = {{2, 4, -2}, {4, 9, -3}, {-2, -3, 7}};
-  Matrix b = {{3}, {7}, {5}};
+  	gaussSeidel(Matrix A, Matrix b)
+  	Matrix A = {{2, 4, -2}, {4, 9, -3}, {-2, -3, 7}};
+  	Matrix b = {{3}, {7}, {5}};
 
 Output from the lines above:
 
@@ -61,4 +61,4 @@ Output from the lines above:
 		  x = temp;
 	  }
 	  return x;
-  }
+  	}
