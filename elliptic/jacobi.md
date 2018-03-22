@@ -8,19 +8,16 @@
 
 **Input:**
 
-	int n = size of mesh
+	Matrix A = Matrix formed from ODE;
+	vector<double> c = right hand side of equation
 	
 **Output:** The function will output the solution to the function at each point int the mesh
 
 **Usage/Example:**
 
-	jacobi(int n)
-	n = 4;
-	f = "x";
-	a = 1;
-	b = 2;
-	ua = 1;
-	ub = 2;
+	jacobi(Matrix A, vector<double> c)
+	Matrix A = {{-2, 1, 0}, {1, -2, 1}, {0, 1, -2}}
+	vector<double> c = {1.25, 1.5, 1.75}
 
 Output from the lines above:
 
@@ -28,26 +25,29 @@ Output from the lines above:
     
 **Implementation/Code:** The following is the code for jacobi()
 
-	Matrix jacobi(int n) {
-	  initEDE(n);
+	Matrix jacobi(Matrix A, vector<double> c) {
+		int n = A.getCol();
 
-	  Matrix D(n - 1, n - 1, 0);
-	  Matrix R = T;
-	  Matrix b(n - 1, 1, 0);
-	  for (int i = 0; i < n - 1; i++) {
-		  D.setVecUnit(i, i, 1 / T.getVecUnit(i, i));
-		  R.setVecUnit(i, i, 0);
-		  b.setVecUnit(i, 0, rhs[i]);
-	  }
-
-	  int iterations = pow(n, 2) * log(n);
-
-	  Matrix x(n - 1, 1, 0);
-	  Matrix temp(n - 1, 1, 0);
-	  while (iterations-- > 0) {
-		  temp = D * (b - (R * x));
-		  x = temp;
-	  }
-
-	  return x;
+		Matrix D(n - 1, n - 1, 0);
+		Matrix R = T;
+		Matrix b(n - 1, 1, 0);
+		for (int i = 0; i < n - 1; i++) {
+			D.setVecUnit(i, i, 1 / A.getVecUnit(i, i));
+			R.setVecUnit(i, i, 0);
+			b.setVecUnit(i, 0, c[i]);
+		}
+		double tol = .0001;
+		double error = 10 * tol;
+		int maxiter = 750;
+		int iter = 0;
+		Matrix x(n - 1, 1, 0);
+		Matrix temp(n - 1, 1, 0);
+		while (error > tol && iter < maxiter) {
+			iter++;
+			temp = D * (b - (R * x));
+			Matrix errorMat = temp - x;
+			error = tnorm(errorMat.getVector());
+			x = temp;
+		}
+		return x;
 	}
