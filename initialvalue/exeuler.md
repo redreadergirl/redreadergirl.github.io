@@ -30,7 +30,7 @@ Output from the lines above:
     
 **Implementation/Code:** The following is the code for explicitEulers()
 
-  	double explicitEulers(double y0, double t0, double time) {
+	double explicitEulers(double y0, double t0, double time) {
 	  double k = .0125;
 	  double y = y0;
 	  double t = t0;
