@@ -3,6 +3,7 @@
 * [Conjugate Gradient Method](conjugategrade.md)
 * [Finite Difference With Coefficient Function](fdaede.md)
 * [Five-Point Stencil](fivepoint.md)
+* [Five-Point Stencil Using Conjugate Gradient Method](fiveconj.md)
 * [Gauss-Seidel](gaussseidel.md)
 * [Initialize Information](initede.md)
 * [Inverse Power Method](inversemethod.md)
