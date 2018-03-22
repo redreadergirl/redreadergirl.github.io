@@ -39,9 +39,15 @@ Output from the lines above:
 
     vector<double> fivePointStencil(double n, string y) {
 	    double h = 1 / (n + 1);
-	    Matrix diag({ {-4, 1, 0}, {1, -4, 1}, {0, 1, -4} });
-	    Matrix iMat(3);
-	    Matrix zero(3, 3, 0);
+	    Matrix diag(n);
+	    for (int i = 0; i < n - 1; i++) {
+		    diag.setVecUnit(i, i, -4);
+		    diag.setVecUnit(i, i + 1, 1);
+		    diag.setVecUnit(i + 1, i, 1);
+	    }
+	    diag.setVecUnit(n - 1, n - 1, -4);
+	    Matrix iMat(n);
+	    Matrix zero(n, n, 0);
 	    vector<Matrix> row(n, zero);
 	    vector < vector<Matrix>> matrix(n, row);
 	    for (int i = 0; i < n - 1; i++) {
@@ -50,7 +56,7 @@ Output from the lines above:
 		    matrix[i + 1][i] = iMat;
 	    }
 	    matrix[n - 1][n - 1] = diag;
-	    Matrix newMatrix(matrix, 3);
+	    Matrix newMatrix(matrix, n);
 	    Matrix T = newMatrix;
 	    vector<double> rhs = inity(y, n, h);
 	    Matrix f(rhs);
