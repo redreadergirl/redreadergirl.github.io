@@ -16,7 +16,7 @@
 **Usage/Example:**
 
 	jacobi(Matrix A, vector<double> c)
-	Matrix A = {{-2, 1, 0}, {1, -2, 1}, {0, 1, -2}}
+	Matrix A = { {-2, 1, 0}, {1, -2, 1}, {0, 1, -2} }
 	vector<double> c = {1.25, 1.5, 1.75}
 
 Output from the lines above:
