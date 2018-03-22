@@ -16,8 +16,8 @@
 **Usage/Example:**
 
   	gaussSeidel(Matrix A, Matrix b)
-  	Matrix A = {{2, 4, -2}, {4, 9, -3}, {-2, -3, 7}};
-  	Matrix b = {{3}, {7}, {5}};
+  	Matrix A = { {2, 4, -2}, {4, 9, -3}, {-2, -3, 7} };
+  	Matrix b = { {3}, {7}, {5} };
 
 Output from the lines above:
 
