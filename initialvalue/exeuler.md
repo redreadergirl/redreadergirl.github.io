@@ -8,9 +8,9 @@
 
 **Input:**
 
-  	double y0 = initial y value;
-  	double t0 = initial t value;
-  	double time = time you want to solve for;
+	double y0 = initial y value;
+	double t0 = initial t value;
+	double time = time you want to solve for;
   
   The user will provide a function to solve f(t, y);
   
@@ -40,4 +40,4 @@ Output from the lines above:
 	  	t += k;
 	  }
 	  return y;
-  	}
+	}
