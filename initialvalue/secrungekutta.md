@@ -18,7 +18,7 @@
 
 **Usage/Example:**
 
-	implicitEulers(double u0, double t0, double time)
+	secRungeKutta(double u0, double t0, double time)
   	u0 = .1
   	t0 = 0
   	time = 1
