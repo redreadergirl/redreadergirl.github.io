@@ -12,17 +12,17 @@
 	double t0 = initial t value;
 	double time = time you want to solve for;
   
-  The user will provide a function to solve f(u, t) and f'(u,t)
+  	The user will provide a function to solve f(u, t) and f'(u,t)
   
 **Output:** The function will output the value of u evaluated at time as a double
 
 **Usage/Example:**
 
 	implicitEulers(double u0, double t0, double time)
-  u0 = .1
-  t0 = 0
-  time = 1
-  f(u, t) = -u
+  	u0 = .1
+  	t0 = 0
+  	time = 1
+  	f(u, t) = -u
 
 Output from the lines above:
 
