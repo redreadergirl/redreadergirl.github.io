@@ -8,20 +8,20 @@
 **Input:**
 
 	double x0 = beginning of mesh at time zero
-  double xn = end of mesh at time zero
-  double n = size of mesh
-  double t = final time you are solving for
-  double deltaT = change it t
-  int a = coefficient in front of ux
+  	double xn = end of mesh at time zero
+  	double n = size of mesh
+  	double t = final time you are solving for
+  	double deltaT = change it t
+  	int a = coefficient in front of ux
   
-  function must be provided for f(x, 0)
+  	function must be provided for f(x, 0)
   
 **Output:** The function will output a column vector as a Matrix of solutions at time t
 
 **Usage/Example:**
 
 	upwinding(0, 1, 10, 1, .001, 2)
-  f(x, 0) = x
+  	f(x, 0) = x
 
 Output from the lines above:
 
